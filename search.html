@@ -1,0 +1,15 @@
+<h2>Search Portal</h2>
+<a href="/logout">Logout</a>
+
+<form method="POST">
+<input name="name" placeholder="নাম">
+<input name="father" placeholder="পিতার নাম">
+<input name="para" placeholder="পাড়া">
+<button>Search</button>
+</form>
+
+<hr>
+
+{% for r in results %}
+<p>{{ r.name }} | {{ r.father }} | {{ r.para }}</p>
+{% endfor %}
